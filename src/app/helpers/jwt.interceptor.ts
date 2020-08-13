@@ -12,7 +12,7 @@ export class JwtInterceptor implements HttpInterceptor {
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
       // tslint:disable-next-line:max-line-length
-      let token = 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MTBjYTcyYzZkZDgyYTgwNzdmNzU1NDkzNDRhYmEyYyIsInN1YiI6IjVmMmM5ZGQ1MTdjNDQzMDAzNDMwODhjMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.vDbHIekfM_nnhurzwY_WAZAH2rIkwSvo0Au_SYwQcL0';
+      let token = 'Bearer eyJhangular observables examplebGciOiJIUzI1NiJ9.eyJhdWQiOiI1MTBjYTcyYzZkZDgyYTgwNzdmNzU1NDkzNDRhYmEyYyIsInN1YiI6IjVmMmM5ZGQ1MTdjNDQzMDAzNDMwODhjMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.vDbHIekfM_nnhurzwY_WAZAH2rIkwSvo0Au_SYwQcL0';
       req = req.clone({
         setHeaders: {
           Authorization: `${token}`

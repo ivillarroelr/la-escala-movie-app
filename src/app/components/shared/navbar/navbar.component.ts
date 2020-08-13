@@ -27,7 +27,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  public getMovieSearch() {
+  public getMoviesSearch() {
     if (this.searchData) {
       this.movieservice.nextData(this.searchData);
     }

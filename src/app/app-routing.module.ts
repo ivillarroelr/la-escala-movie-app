@@ -9,7 +9,7 @@ const routes: Routes = [
     path: '',
     component: LayoutAppComponent,
     children: [
-      {path: '', loadChildren: '/components/components.module#ComponentsModule'},
+      {path: '', loadChildren: './components/components.module#ComponentsModule'},
     ]
   }
 ];
